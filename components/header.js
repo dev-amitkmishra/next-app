@@ -71,22 +71,22 @@ export default function BackToTop(props) {
     const classes = useStyles();
     return (
         <React.Fragment>
-        <CssBaseline />
-        <AppBar style={{background: 'black'}}>
-            <Toolbar>
-                <img src={ wizwork } alt="logo" />
-                <Typography variant="h6" className={classes.title} noWrap></Typography>
-                <Button onClick={handleClick} variant="contained" color="primary" {...props} style={{background: '#f79561', color: '#fff', borderRadius: 0}}>
-                    Contact Us
-                </Button>
-            </Toolbar>
-        </AppBar>
-        <Toolbar id="back-to-top-anchor" />
-        <ScrollTop {...props}>
-            <Fab color="secondary" size="small" aria-label="scroll back to top">
-            <span><KeyboardArrowUpIcon /></span>
-            </Fab>
-        </ScrollTop>
+            <CssBaseline />
+            <AppBar style={{background: 'white'}}>
+                <Toolbar>
+                    <img src={ wizwork } alt="logo" />
+                    <Typography variant="h6" className={classes.title} noWrap></Typography>
+                    <Button onClick={handleClick} variant="contained" color="primary" {...props} style={{background: 'rgb(227 51 52)', color: '#fff'}}>
+                        Let's talk
+                    </Button>
+                </Toolbar>
+            </AppBar>
+            <Toolbar id="back-to-top-anchor" />
+            <ScrollTop {...props}>
+                <Fab color="secondary" size="small" aria-label="scroll back to top">
+                    <KeyboardArrowUpIcon />
+                </Fab>
+            </ScrollTop>
         </React.Fragment>
     );
 }
