@@ -72,11 +72,16 @@ export default function BackToTop(props) {
     return (
         <React.Fragment>
             <CssBaseline />
-            <AppBar style={{background: 'white'}}>
+            <AppBar style={{background: 'white' }} elevation={0}>
                 <Toolbar>
-                    <img src={ wizwork } alt="logo" />
+                    <img src={ wizwork } alt="logo" height="36" />
                     <Typography variant="h6" className={classes.title} noWrap></Typography>
-                    <Button onClick={handleClick} variant="contained" color="primary" {...props} style={{background: 'rgb(227 51 52)', color: '#fff'}}>
+                    <Typography variant="h5" style={{color: 'black'}} className={classes.title}>
+                        <span style={{paddingRight: '50px'}}>Work</span>
+                        <span style={{paddingRight: '50px'}}>Services</span>
+                        <span>About</span>
+                    </Typography>
+                    <Button onClick={handleClick} variant="contained" color="primary" {...props} style={{background: 'rgb(227 51 52)', color: '#fff', borderRadius: '20px', textTransform: 'capitalize'}}>
                         Let's talk
                     </Button>
                 </Toolbar>
